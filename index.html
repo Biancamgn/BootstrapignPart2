@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mini Drills</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ═══ HERO ═══ -->
+  <header class="hero-header">
+    <div class="container">
+      <span class="badge-accent mb-2 d-inline-block">LBYCPG3 — Lab Activity 7</span>
+      <h1>Bootstrap 5 Mini Drills</h1>
+      <p>12 Exercises &middot; Drill Sets A–H &middot; Bianca Manganaan &middot; De La Salle University</p>
+    </div>
+  </header>
+
+  <!-- ═══ TABS NAVIGATION ═══ -->
+  <div class="container mt-3">
+    <ul class="nav nav-tabs nav-tabs-custom" id="drillTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-selected="true">1 · Hello World</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab">2 · Reboot</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab">3 · Typography</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab4-tab" data-bs-toggle="tab" data-bs-target="#tab4" type="button" role="tab">4 · Colors</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab5-tab" data-bs-toggle="tab" data-bs-target="#tab5" type="button" role="tab">5 · Buttons</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab6-tab" data-bs-toggle="tab" data-bs-target="#tab6" type="button" role="tab">6 · Grid</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab7-tab" data-bs-toggle="tab" data-bs-target="#tab7" type="button" role="tab">7 · Cards</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab8-tab" data-bs-toggle="tab" data-bs-target="#tab8" type="button" role="tab">8 · Accordion</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab9-tab" data-bs-toggle="tab" data-bs-target="#tab9" type="button" role="tab">9 · Spacing</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab10-tab" data-bs-toggle="tab" data-bs-target="#tab10" type="button" role="tab">10 · Flex</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab11-tab" data-bs-toggle="tab" data-bs-target="#tab11" type="button" role="tab">11 · Images</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab12-tab" data-bs-toggle="tab" data-bs-target="#tab12" type="button" role="tab">12 · Tables</button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- ═══ TAB CONTENT ═══ -->
+  <div class="container mt-3 pb-4">
+    <div class="tab-content" id="drillTabsContent">
+
+      <!-- ─── TAB 1: Hello World (Drill Set A) ─── -->
+      <div class="tab-pane fade show active" id="tab1" role="tabpanel">
+        <div class="drill-card">
+          <span class="drill-set-badge">Drill Set A — Hello World &amp; CDN Setup</span>
+          <h4>Exercise 1: Hello Bootstrap 5</h4>
+          <p class="text-muted small">Verify Bootstrap is loaded via CDN by rendering a styled heading, lead paragraph, and primary button inside a container.</p>
+          <div class="output-preview">
+            <div class="container mt-3">
+              <h1>Hello, Bootstrap 5!</h1>
+              <p class="lead">Bootstrap is loaded if this text is styled.</p>
+              <button class="btn btn-primary">Click Me</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ─── TAB 2: Reboot (Drill Set A) ─── -->
+      <div class="tab-pane fade" id="tab2" role="tabpanel">
+        <div class="drill-card">
+          <span class="drill-set-badge">Drill Set A — Reboot Defaults</span>
+          <h4>Exercise 2: Reboot-Styled HTML Elements</h4>
+          <p class="text-muted small">Observe Bootstrap's Reboot CSS normalizing default HTML elements: headings, paragraphs, lists, blockquotes, and code.</p>
+          <div class="output-preview">
+            <div class="container mt-3">
+              <h1>Heading 1</h1>
+              <h2>Heading 2</h2>
+              <h3>Heading 3</h3>
+              <p>A plain paragraph. <strong>Bold text.</strong> <em>Italic text.</em></p>
+              <a href="#">A hyperlink</a>
+              <ul>
+                <li>Item One</li>
+                <li>Item Two</li>
+                <li>Item Three</li>
+              </ul>
+              <hr>
+              <blockquote>
+                <p>A blockquote paragraph.</p>
+              </blockquote>
+              <code>inline code element</code>
+              <pre>preformatted text block</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ─── TAB 3: Typography (Drill Set B) ─── -->
+      <div class="tab-pane fade" id="tab3" role="tabpanel">
+        <div class="drill-card">
+          <span class="drill-set-badge">Drill Set B — Typography &amp; Text Utilities</span>
+          <h4>Exercise 3: Headings, Display, &amp; Text Formatting</h4>
+          <p class="text-muted small">Standard headings, display headings, heading classes on non-heading elements, text alignment, font weight/style, decorations, and transforms.</p>
+          <div class="output-preview">
+            <div class="container mt-3">
+              <h1>Standard h1 Heading</h1>
+              <h2>Standard h2 Heading</h2>
+              <h3>Standard h3 Heading</h3>
+              <h4>Standard h4 Heading</h4>
+              <h5>Standard h5 Heading</h5>
+              <h6>Standard h6 Heading</h6>
+              <hr class="my-3">
+              <p class="h3">A paragraph that looks like an h3 using the .h3 class.</p>
+              <hr class="my-3">
+              <h1 class="display-1">Display 1</h1>
+              <p class="lead">Lead text below Display 1: slightly larger, lighter weight.</p>
+              <h1 class="display-4">Display 4</h1>
+              <h1 class="display-6">Display 6</h1>
+              <hr class="my-3">
+              <p class="text-start">This paragraph is aligned to the start (left).</p>
+              <p class="text-center">This paragraph is centered.</p>
+              <p class="text-end">This paragraph is aligned to the end (right).</p>
+              <hr class="my-3">
+              <p class="fw-bold">fw-bold: font-weight 700</p>
+              <p class="fw-semibold">fw-semibold: font-weight 600</p>
+              <p class="fw-normal">fw-normal: font-weight 400</p>
+              <p class="fw-light">fw-light: font-weight 300</p>
+              <hr class="my-3">
+              <p><span class="fst-italic">fst-italic: italic style.</span></p>
+              <p><span class="fst-normal">fst-normal: normal style (overrides italic).</span></p>
+              <hr class="my-3">
+              <p class="text-decoration-underline">text-decoration-underline</p>
+              <p class="text-decoration-line-through">text-decoration-line-through</p>
+              <p class="text-decoration-none"><a href="#" class="text-decoration-none">Link with no underline</a></p>
+              <hr class="my-3">
+              <p class="text-uppercase">text-uppercase: all letters uppercase.</p>
+              <p class="text-lowercase">TEXT-LOWERCASE: all letters lowercase.</p>
+              <p class="text-capitalize">text-capitalize: first letter of each word.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ─── TAB 4: Colors (Drill Set B) ─── -->
+      <div class="tab-pane fade" id="tab4" role="tabpanel">
+        <div class="drill-card">
+          <span class="drill-set-badge">Drill Set B — Colors &amp; Backgrounds</span>
+          <h4>Exercise 4: Contextual Text &amp; Background Colors</h4>
+          <p class="text-muted small">Bootstrap's contextual text colors, background colors with appropriate contrast, and background opacity utilities.</p>
+          <div class="output-preview">
+            <div class="container mt-3">
+              <h5>Contextual Text Colors</h5>
+              <p class="text-primary">text-primary: Bootstrap primary blue.</p>
+              <p class="text-secondary">text-secondary: Bootstrap secondary grey.</p>
+              <p class="text-success">text-success: Bootstrap success green.</p>
+              <p class="text-danger">text-danger: Bootstrap danger red.</p>
+              <p class="text-warning">text-warning: Bootstrap warning yellow.</p>
+              <p class="text-info">text-info: Bootstrap info cyan.</p>
+              <p class="text-muted">text-muted: de-emphasised grey text.</p>
+              <p class="text-dark">text-dark: near-black text.</p>
+              <p class="bg-dark text-white">text-white on dark background.</p>
+              <p class="bg-dark text-white-50">text-white-50: semi-transparent white (50% opacity).</p>
+              <hr class="my-3">
+              <h5>Background Colors</h5>
+              <div class="bg-primary text-white p-3 mb-2">bg-primary</div>
+              <div class="bg-secondary text-white p-3 mb-2">bg-secondary</div>
+              <div class="bg-success text-white p-3 mb-2">bg-success</div>
+              <div class="bg-danger text-white p-3 mb-2">bg-danger</div>
+              <div class="bg-warning text-dark p-3 mb-2">bg-warning (use text-dark)</div>
+              <div class="bg-info text-dark p-3 mb-2">bg-info (use text-dark)</div>
+              <div class="bg-light text-dark p-3 mb-2">bg-light</div>
+              <div class="bg-dark text-white p-3 mb-2">bg-dark</div>
+              <div class="bg-white text-dark border p-3 mb-2">bg-white</div>
+              <hr class="my-3">
+              <h5>Background Opacity</h5>
+              <div class="bg-primary text-white p-3 mb-1">bg-primary, full opacity</div>
+              <div class="bg-primary text-white bg-opacity-75 p-3 mb-1">bg-opacity-75</div>
+              <div class="bg-primary text-white bg-opacity-50 p-3 mb-1">bg-opacity-50</div>
+              <div class="bg-primary text-white bg-opacity-25 p-3 mb-1">bg-opacity-25</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ─── TAB 5: Buttons (Drill Set C) ─── -->
+      <div class="tab-pane fade" id="tab5" role="tabpanel">
+        <div class="drill-card">
+          <span class="drill-set-badge">Drill Set C — Buttons &amp; Button Groups</span>
+          <h4>Exercise 5: Button Variants, Sizes, States &amp; Groups</h4>
+          <p class="text-muted small">Solid, outline, sizing, disabled states, full-width, button groups, toolbar, radio/checkbox toggles.</p>
+          <div class="output-preview">
+            <div class="container mt-3">
+              <h5>Solid Variants</h5>
+              <div class="mb-3">
+                <button type="button" class="btn btn-primary me-1">Primary</button>
+                <button type="button" class="btn btn-secondary me-1">Secondary</button>
+                <button type="button" class="btn btn-success me-1">Success</button>
+                <button type="button" class="btn btn-danger me-1">Danger</button>
+                <button type="button" class="btn btn-warning me-1">Warning</button>
+                <button type="button" class="btn btn-info me-1">Info</button>
+                <button type="button" class="btn btn-light me-1">Light</button>
+                <button type="button" class="btn btn-dark me-1">Dark</button>
+                <button type="button" class="btn btn-link me-1">Link</button>
+              </div>
+              <h5>Outline Variants</h5>
+              <div class="mb-3">
+                <button type="button" class="btn btn-outline-primary me-1">Primary</button>
+                <button type="button" class="btn btn-outline-secondary me-1">Secondary</button>
+                <button type="button" class="btn btn-outline-success me-1">Success</button>
+                <button type="button" class="btn btn-outline-danger me-1">Danger</button>
+                <button type="button" class="btn btn-outline-warning me-1">Warning</button>
+                <button type="button" class="btn btn-outline-info me-1">Info</button>
+                <button type="button" class="btn btn-outline-dark me-1">Dark</button>
+              </div>
+              <h5>Sizes</h5>
+              <div class="mb-3">
+                <button type="button" class="btn btn-primary btn-lg me-2">Large</button>
+                <button type="button" class="btn btn-primary me-2">Default</button>
+                <button type="button" class="btn btn-primary btn-sm">Small</button>
+              </div>
+              <h5>Button on Different Elements</h5>
+              <div class="mb-3">
+                <button type="button" class="btn btn-success me-2">button element</button>
+                <a href="#" class="btn btn-success me-2" role="button">a element</a>
+                <input type="button" class="btn btn-success me-2" value="input button">
+              </div>
+              <h5>Disabled State</h5>
+              <div class="mb-3">
+                <button type="button" class="btn btn-primary me-2" disabled>Disabled button</button>
+                <a href="#" class="btn btn-primary disabled me-2" aria-disabled="true">Disabled anchor</a>
+              </div>
+              <h5>Full-Width Button</h5>
+              <div class="d-grid gap-2 mb-3">
+                <button type="button" class="btn btn-primary">Full-Width Button</button>
+                <button type="button" class="btn btn-outline-secondary">Another Full-Width</button>
+              </div>
+              <h5>Button Group</h5>
+              <div class="btn-group mb-3" role="group" aria-label="Basic button group">
+                <button type="button" class="btn btn-primary">Left</button>
+                <button type="button" class="btn btn-primary">Center</button>
+                <button type="button" class="btn btn-primary">Right</button>
+              </div>
+              <br>
+              <h5>Button Toolbar</h5>
+              <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar">
+                <div class="btn-group me-2" role="group">
+                  <button type="button" class="btn btn-outline-secondary">1</button>
+                  <button type="button" class="btn btn-outline-secondary">2</button>
+                  <button type="button" class="btn btn-outline-secondary">3</button>
+                </div>
+                <div class="btn-group me-2" role="group">
+                  <button type="button" class="btn btn-outline-secondary">4</button>
+                  <button type="button" class="btn btn-outline-secondary">5</button>
+                </div>
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-outline-secondary">6</button>
+                </div>
+              </div>
+              <h5>Radio Toggle Buttons</h5>
+              <div class="btn-group mb-3" role="group" aria-label="View options">
+                <input type="radio" class="btn-check" name="view" id="listView" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="listView">List View</label>
+                <input type="radio" class="btn-check" name="view" id="gridView" autocomplete="off">
+                <label class="btn btn-outline-primary" for="gridView">Grid View</label>
+                <input type="radio" class="btn-check" name="view" id="cardView" autocomplete="off">
+                <label class="btn btn-outline-primary" for="cardView">Card View</label>
+              </div>
+              <br>
+              <h5>Checkbox Toggle Buttons</h5>
+              <div class="mb-3">
+                <input type="checkbox" class="btn-check" id="chkBold" autocomplete="off">
+                <label class="btn btn-outline-secondary me-1" for="chkBold">Bold</label>
+                <input type="checkbox" class="btn-check" id="chkItalic" autocomplete="off">
+                <label class="btn btn-outline-secondary me-1" for="chkItalic">Italic</label>
+                <input type="checkbox" class="btn-check" id="chkUnderline" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="chkUnderline">Underline</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ─── TAB 6: Grid (Drill Set D) ─── -->
+      <div class="tab-pane fade" id="tab6" role="tabpanel">
+        <div class="drill-card">
+          <span class="drill-set-badge">Drill Set D — Responsive Grid &amp; Layout</span>
+          <h4>Exercise 6: 12-Column Grid System</h4>
+          <p class="text-muted small">Containers, equal columns, unequal splits, auto columns, offsets, and responsive breakpoints.</p>
+          <div class="output-preview">
+            <div class="container mt-3">
+              <h5>Container Types</h5>
+              <div class="container bg-primary text-white p-3 mb-2">.container: Fixed-width. Centered.</div>
+              <div class="container-fluid bg-dark text-white p-3 mb-3">.container-fluid: Always 100% width.</div>
+
+              <h5>4 Equal Columns: col-3</h5>
+              <div class="row g-2 mb-3">
+                <div class="col-3"><div class="bg-primary text-white p-2 text-center">col-3</div></div>
+                <div class="col-3"><div class="bg-primary text-white p-2 text-center">col-3</div></div>
+                <div class="col-3"><div class="bg-primary text-white p-2 text-center">col-3</div></div>
+                <div class="col-3"><div class="bg-primary text-white p-2 text-center">col-3</div></div>
+              </div>
+
+              <h5>Two-Thirds + One-Third: col-8 + col-4</h5>
+              <div class="row g-2 mb-3">
+                <div class="col-8"><div class="bg-success text-white p-2 text-center">col-8</div></div>
+                <div class="col-4"><div class="bg-success text-white p-2 text-center">col-4</div></div>
+              </div>
+
+              <h5>Unequal: col-2 + col-7 + col-3</h5>
+              <div class="row g-2 mb-3">
+                <div class="col-2"><div class="bg-danger text-white p-2 text-center">col-2</div></div>
+                <div class="col-7"><div class="bg-danger text-white p-2 text-center">col-7</div></div>
+                <div class="col-3"><div class="bg-danger text-white p-2 text-center">col-3</div></div>
+              </div>
+
+              <h5>Auto Columns: col (no number)</h5>
+              <div class="row g-2 mb-3">
+                <div class="col"><div class="bg-warning text-dark p-2 text-center">col</div></div>
+                <div class="col"><div class="bg-warning text-dark p-2 text-center">col</div></div>
+                <div class="col"><div class="bg-warning text-dark p-2 text-center">col</div></div>
+              </div>
+
+              <h5>Column Offset: offset-md-2</h5>
+              <div class="row g-2 mb-3">
+                <div class="col-md-4 offset-md-2"><div class="bg-info text-dark p-2 text-center">col-md-4 offset-md-2</div></div>
+                <div class="col-md-4"><div class="bg-info text-dark p-2 text-center">col-md-4</div></div>
+              </div>
+
+              <h5>Responsive: col-12 col-md-6 col-lg-3</h5>
+              <div class="row g-2 mb-3">
+                <div class="col-12 col-md-6 col-lg-3"><div class="bg-secondary text-white p-2 text-center">Item 1</div></div>
+                <div class="col-12 col-md-6 col-lg-3"><div class="bg-secondary text-white p-2 text-center">Item 2</div></div>
+                <div class="col-12 col-md-6 col-lg-3"><div class="bg-secondary text-white p-2 text-center">Item 3</div></div>
+                <div class="col-12 col-md-6 col-lg-3"><div class="bg-secondary text-white p-2 text-center">Item 4</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ─── TAB 7: Cards (Drill Set E) ─── -->
+      <div class="tab-pane fade" id="tab7" role="tabpanel">
+        <div class="drill-card">
+          <span class="drill-set-badge">Drill Set E — Core Components: Cards</span>
+          <h4>Exercise 7: Card Variants</h4>
+          <p class="text-muted small">Image top card, colored header card, list group flush card, and horizontal card layout.</p>
+          <div class="output-preview">
+            <div class="container mt-3">
+              <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                  <div class="card h-100 shadow-sm">
+                    <img src="https://placehold.co/400x200/0d6efd/white?text=Project+Image" class="card-img-top" alt="Project screenshot">
+                    <div class="card-body">
+                      <h5 class="card-title">Card with Image</h5>
+                      <p class="card-text">The card-img-top class rounds the top corners to match the card border. The card-body provides consistent padding inside the card.</p>
+                      <a href="#" class="btn btn-primary btn-sm">View Project</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 shadow-sm">
+                    <div class="card-header bg-primary text-white">Featured</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Card with Header</h5>
+                      <p class="card-text">card-header renders as a separate section above the card-body. Apply bg-* and text-* classes directly to the header element.</p>
+                    </div>
+                    <div class="card-footer text-muted small">Updated 3 days ago</div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 shadow-sm">
+                    <div class="card-header">Skills</div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">HTML5 and Semantic Markup</li>
+                      <li class="list-group-item">CSS3 and Bootstrap 5</li>
+                      <li class="list-group-item">JavaScript Fundamentals</li>
+                      <li class="list-group-item">Git and GitHub</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="#" class="card-link">See Full Resume</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 shadow-sm">
+                    <div class="row g-0">
+                      <div class="col-4">
+                        <img src="https://placehold.co/200x200/198754/white?text=Photo" class="img-fluid rounded-start h-100" style="object-fit:cover;" alt="Profile photo">
+                      </div>
+                      <div class="col-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Horizontal Card</h5>
+                          <p class="card-text">Use g-0 on the row inside the card to remove gutters. rounded-start rounds only the left corners of the image.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 5 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ─── TAB 8: Accordion (Drill Set E) ─── -->
+      <div class="tab-pane fade" id="tab8" role="tabpanel">
+        <div class="drill-card">
+          <span class="drill-set-badge">Drill Set E — Core Components: Accordion &amp; Collapse</span>
+          <h4>Exercise 8: FAQ Accordion &amp; Collapse</h4>
+          <p class="text-muted small">Standard accordion (one item open at a time), always-open accordion, and standalone collapse toggle.</p>
+          <div class="output-preview">
+            <div class="container mt-3">
+              <h5>FAQ Accordion</h5>
+              <div class="accordion mb-4" id="faqAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="faqH1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">What is Bootstrap?</button>
+                  </h2>
+                  <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faqH1" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">Bootstrap is an open-source CSS and JavaScript framework for building responsive, mobile-first websites. It provides a grid system, pre-styled components, and utility classes.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="faqH2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">Do I need to write custom CSS?</button>
+                  </h2>
+                  <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faqH2" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">For simple projects, Bootstrap's utility classes can handle most styling. For custom designs, you create a separate CSS file and load it after Bootstrap.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="faqH3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">Is Bootstrap mobile-first?</button>
+                  </h2>
+                  <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faqH3" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">Yes. Bootstrap is designed mobile-first. The base grid styles apply to all screen sizes, and min-width media queries add rules for larger screens.</div>
+                  </div>
+                </div>
+              </div>
+
+              <h5>Always-Open Accordion (multiple items open)</h5>
+              <div class="accordion mb-4" id="alwaysOpen">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#openItem1" aria-expanded="true">Section One</button>
+                  </h2>
+                  <div id="openItem1" class="accordion-collapse collapse show">
+                    <div class="accordion-body">Content for section one.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#openItem2" aria-expanded="true">Section Two</button>
+                  </h2>
+                  <div id="openItem2" class="accordion-collapse collapse show">
+                    <div class="accordion-body">Content for section two.</div>
+                  </div>
+                </div>
+              </div>
+
+              <h5>Standalone Collapse</h5>
+              <button class="btn btn-outline-primary mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseContent">Toggle Content</button>
+              <div class="collapse" id="collapseContent">
+                <div class="card card-body">This content is hidden by default and shown when the button is clicked.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ─── TAB 9: Spacing (Drill Set F) ─── -->
+      <div class="tab-pane fade" id="tab9" role="tabpanel">
+        <div class="drill-card">
+          <span class="drill-set-badge">Drill Set F — Utility Classes: Spacing</span>
+          <h4>Exercise 9: Margin &amp; Padding Utilities</h4>
+          <p class="text-muted small">Margin (m-, mt-, mb-, ms-, me-, mx-, my-), padding (p-, pt-, pb-, ps-, pe-, px-, py-), and responsive spacing.</p>
+          <div class="output-preview">
+            <div class="container mt-3">
+              <h5>Margin Utilities</h5>
+              <div class="bg-light border p-2 mb-3">
+                <div class="bg-primary text-white m-3">m-3: all sides 1rem</div>
+                <div class="bg-success text-white mt-4 mb-2">mt-4 mb-2</div>
+                <div class="bg-danger text-white ms-5 me-2">ms-5 me-2</div>
+                <div class="bg-warning text-dark mx-auto" style="width: 200px;">mx-auto: centered</div>
+                <div class="bg-info text-dark my-4">my-4: vertical margin 1.5rem</div>
+              </div>
+              <h5>Padding Utilities</h5>
+              <div class="bg-light border mb-3">
+                <div class="bg-primary text-white p-4 mb-2">p-4: padding all sides 1.5rem</div>
+                <div class="bg-success text-white pt-1 pb-5 mb-2">pt-1 pb-5</div>
+                <div class="bg-danger text-white px-5 py-1 mb-2">px-5 py-1</div>
+                <div class="bg-info text-dark ps-3 pe-0 mb-2">ps-3 pe-0</div>
+              </div>
+              <h5>Responsive Spacing</h5>
+              <div class="bg-secondary text-white p-2 p-md-4 p-lg-5">p-2 on mobile, p-4 on tablet, p-5 on desktop. Resize the browser to see the padding change.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ─── TAB 10: Flex (Drill Set F) ─── -->
+      <div class="tab-pane fade" id="tab10" role="tabpanel">
+        <div class="drill-card">
+          <span class="drill-set-badge">Drill Set F — Utility Classes: Flexbox</span>
+          <h4>Exercise 10: Flexbox Utilities</h4>
+          <p class="text-muted small">justify-content, align-items, flex-fill, ms-auto, flex-column, borders, rounded corners, and shadows.</p>
+          <div class="output-preview">
+            <div class="container mt-3">
+              <h5>Justify Content</h5>
+              <div class="d-flex justify-content-start bg-light border mb-2 p-1">
+                <div class="bg-primary text-white px-3 py-2 me-1">1</div>
+                <div class="bg-primary text-white px-3 py-2 me-1">2</div>
+                <div class="bg-primary text-white px-3 py-2">3</div>
+              </div>
+              <div class="d-flex justify-content-center bg-light border mb-2 p-1">
+                <div class="bg-success text-white px-3 py-2 me-1">1</div>
+                <div class="bg-success text-white px-3 py-2 me-1">2</div>
+                <div class="bg-success text-white px-3 py-2">3</div>
+              </div>
+              <div class="d-flex justify-content-between bg-light border mb-2 p-1">
+                <div class="bg-danger text-white px-3 py-2">1</div>
+                <div class="bg-danger text-white px-3 py-2">2</div>
+                <div class="bg-danger text-white px-3 py-2">3</div>
+              </div>
+              <div class="d-flex justify-content-evenly bg-light border mb-4 p-1">
+                <div class="bg-warning text-dark px-3 py-2">1</div>
+                <div class="bg-warning text-dark px-3 py-2">2</div>
+                <div class="bg-warning text-dark px-3 py-2">3</div>
+              </div>
+
+              <h5>Align Items</h5>
+              <div class="d-flex align-items-start bg-light border mb-2 p-1" style="height:80px">
+                <div class="bg-primary text-white p-2 me-1">Start</div>
+                <div class="bg-primary text-white p-2">Start</div>
+              </div>
+              <div class="d-flex align-items-center bg-light border mb-2 p-1" style="height:80px">
+                <div class="bg-success text-white p-2 me-1">Center</div>
+                <div class="bg-success text-white p-2">Center</div>
+              </div>
+              <div class="d-flex align-items-end bg-light border mb-4 p-1" style="height:80px">
+                <div class="bg-danger text-white p-2 me-1">End</div>
+                <div class="bg-danger text-white p-2">End</div>
+              </div>
+
+              <h5>flex-fill and ms-auto</h5>
+              <div class="d-flex bg-light border mb-2 p-1">
+                <div class="bg-primary text-white p-2 me-1">Fixed</div>
+                <div class="bg-success text-white p-2 flex-fill me-1">flex-fill: expands</div>
+                <div class="bg-warning text-dark p-2">Fixed</div>
+              </div>
+              <div class="d-flex bg-light border mb-4 p-1">
+                <div class="bg-primary text-white p-2 me-1">Left Item</div>
+                <div class="bg-danger text-white p-2 ms-auto">ms-auto: pushed right</div>
+              </div>
+
+              <h5>Borders, Rounded &amp; Shadows</h5>
+              <div class="d-flex flex-wrap gap-3 mb-3">
+                <div class="border p-3">border</div>
+                <div class="border-top p-3">border-top</div>
+                <div class="border border-primary border-2 p-3">primary 2</div>
+                <div class="border border-danger border-4 p-3">danger 4</div>
+              </div>
+              <div class="d-flex flex-wrap gap-3 mb-3">
+                <div class="bg-primary text-white p-3 rounded">rounded</div>
+                <div class="bg-success text-white p-4 rounded-circle">circle</div>
+                <div class="bg-success text-white px-4 py-2 rounded-pill">rounded-pill</div>
+              </div>
+              <div class="d-flex flex-wrap gap-4 p-4 bg-white">
+                <div class="bg-white border p-3 shadow-none">shadow-none</div>
+                <div class="bg-white border p-3 shadow-sm">shadow-sm</div>
+                <div class="bg-white border p-3 shadow">shadow</div>
+                <div class="bg-white border p-3 shadow-lg">shadow-lg</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ─── TAB 11: Images (Drill Set H) ─── -->
+      <div class="tab-pane fade" id="tab11" role="tabpanel">
+        <div class="drill-card">
+          <span class="drill-set-badge">Drill Set H — Images</span>
+          <h4>Exercise 11: Image Utilities &amp; Figures</h4>
+          <p class="text-muted small">img-fluid responsive images, rounded/circle/pill/thumbnail styling, centered images, and figure with caption.</p>
+          <div class="output-preview">
+            <div class="container mt-3">
+              <h5>img-fluid (Responsive Image)</h5>
+              <img src="https://placehold.co/800x300/0d6efd/white?text=img-fluid" class="img-fluid mb-4" alt="Responsive fluid image">
+
+              <h5>Image Style Utilities</h5>
+              <div class="d-flex flex-wrap gap-3 mb-4">
+                <img src="https://placehold.co/120x120/198754/white?text=rounded" class="rounded" alt="Rounded corners" width="120" height="120">
+                <img src="https://placehold.co/120x120/dc3545/white?text=circle" class="rounded-circle" alt="Circle image" width="120" height="120">
+                <img src="https://placehold.co/200x120/ffc107/black?text=pill" class="rounded-pill" alt="Pill shape" width="200" height="120">
+                <img src="https://placehold.co/120x120/6f42c1/white?text=thumb" class="img-thumbnail" alt="Thumbnail" width="120" height="120">
+              </div>
+
+              <h5>Centered Image</h5>
+              <img src="https://placehold.co/300x100/0dcaf0/black?text=Centered" class="d-block mx-auto mb-4" alt="Centered image">
+
+              <h5>Figure and Caption</h5>
+              <figure class="figure">
+                <img src="https://placehold.co/400x250/212529/white?text=Figure+Image" class="figure-img img-fluid rounded" alt="Figure image example">
+                <figcaption class="figure-caption text-end">Figure 1: A caption aligned to the right using text-end.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ─── TAB 12: Tables (Drill Set H) ─── -->
+      <div class="tab-pane fade" id="tab12" role="tabpanel">
+        <div class="drill-card">
+          <span class="drill-set-badge">Drill Set H — Tables</span>
+          <h4>Exercise 12: Bootstrap Tables</h4>
+          <p class="text-muted small">Striped, bordered, hover, responsive table with contextual row colors, badges, caption, thead-dark, tfoot, and a dark table variant.</p>
+          <div class="output-preview">
+            <div class="container mt-3">
+              <h5>Bootstrap Table: All Features Combined</h5>
+              <div class="table-responsive">
+                <table class="table table-striped table-bordered table-hover">
+                  <caption>Table 1: Student Grades for Online Technologies, Second Semester 2025.</caption>
+                  <thead class="table-dark">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Student Name</th>
+                      <th scope="col">Subject</th>
+                      <th scope="col">Grade</th>
+                      <th scope="col">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Ana Reyes</td>
+                      <td>Online Technologies</td>
+                      <td>92</td>
+                      <td><span class="badge bg-success">Passed</span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Ben Santos</td>
+                      <td>Online Technologies</td>
+                      <td>85</td>
+                      <td><span class="badge bg-success">Passed</span></td>
+                    </tr>
+                    <tr class="table-warning">
+                      <th scope="row">3</th>
+                      <td>Clara Tan</td>
+                      <td>Online Technologies</td>
+                      <td>62</td>
+                      <td><span class="badge bg-warning text-dark">At Risk</span></td>
+                    </tr>
+                    <tr class="table-danger">
+                      <th scope="row">4</th>
+                      <td>Dan Cruz</td>
+                      <td>Online Technologies</td>
+                      <td>54</td>
+                      <td><span class="badge bg-danger">Failed</span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>Elena Diaz</td>
+                      <td>Online Technologies</td>
+                      <td>98</td>
+                      <td><span class="badge bg-primary">With Honors</span></td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr class="table-secondary">
+                      <td colspan="3"><strong>Class Average</strong></td>
+                      <td><strong>78.2</strong></td>
+                      <td></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+
+              <h5 class="mt-4">Dark Table: table-dark</h5>
+              <div class="table-responsive">
+                <table class="table table-dark table-hover table-sm">
+                  <thead>
+                    <tr>
+                      <th scope="col">Name</th>
+                      <th scope="col">Score</th>
+                      <th scope="col">Rank</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Elena Diaz</td><td>98</td><td>1st</td></tr>
+                    <tr><td>Ana Reyes</td><td>92</td><td>2nd</td></tr>
+                    <tr><td>Ben Santos</td><td>85</td><td>3rd</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /tab-content -->
+  </div><!-- /container -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>

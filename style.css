@@ -1,0 +1,144 @@
+:root {
+  --bg-dark: #0f0d0b;
+  --accent: #d4874d;
+  --cream: #f5e6d3;
+  --card-bg: #1a1714;
+  --border-color: #2e2822;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background: var(--bg-dark);
+  color: var(--cream);
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+}
+
+
+.hero-header {
+  background: linear-gradient(135deg, #1a1410 0%, #0f0d0b 50%, #1a1410 100%);
+  border-bottom: 2px dashed var(--accent);
+  padding: 2.5rem 0 1.5rem;
+  text-align: center;
+}
+.hero-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: var(--accent);
+  letter-spacing: 0.03em;
+}
+.hero-header p {
+  color: #a89580;
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+.hero-header .badge-accent {
+  background: var(--accent);
+  color: var(--bg-dark);
+  font-weight: 700;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 3px;
+}
+
+
+.nav-tabs-custom {
+  border-bottom: 2px dashed var(--border-color);
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) var(--bg-dark);
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 2px;
+}
+.nav-tabs-custom::-webkit-scrollbar { height: 4px; }
+.nav-tabs-custom::-webkit-scrollbar-track { background: var(--bg-dark); }
+.nav-tabs-custom::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
+
+.nav-tabs-custom .nav-link {
+  color: #a89580;
+  border: 1px dashed transparent;
+  border-radius: 4px 4px 0 0;
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 0.5rem 0.85rem;
+  white-space: nowrap;
+  transition: all 0.2s;
+  background: transparent;
+}
+.nav-tabs-custom .nav-link:hover {
+  color: var(--cream);
+  border-color: var(--border-color);
+  background: rgba(212, 135, 77, 0.06);
+}
+.nav-tabs-custom .nav-link.active {
+  color: var(--bg-dark);
+  background: var(--accent);
+  border-color: var(--accent);
+  font-weight: 700;
+}
+
+
+.drill-card {
+  background: var(--card-bg);
+  border: 1px dashed var(--border-color);
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+.drill-card h4 {
+  font-family: 'Playfair Display', serif;
+  color: var(--accent);
+  font-size: 1.15rem;
+  margin-bottom: 0.3rem;
+}
+.drill-card .drill-set-badge {
+  display: inline-block;
+  background: rgba(212, 135, 77, 0.15);
+  color: var(--accent);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 3px;
+  border: 1px dashed var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+
+.output-preview {
+  background: #ffffff;
+  color: #212529;
+  border-radius: 6px;
+  padding: 1.25rem;
+  min-height: 120px;
+  border: 2px solid var(--accent);
+  position: relative;
+  overflow: auto;
+}
+.output-preview::before {
+  content: 'LIVE OUTPUT';
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--accent);
+  color: var(--bg-dark);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 2px 8px;
+  border-radius: 0 4px 0 4px;
+}
+
+
+.output-preview .modal { color: #212529; }
+
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-dark); }
+::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 3px; }
